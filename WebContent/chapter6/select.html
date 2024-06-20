@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Servlet</title>
+</head>
+
+<body>
+<form action="select" method="post">
+<p>購入数を選択してください。</p>
+<select name="count">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+<p>購入方法を選択してください。</p>
+<!-- input要素のtype="radio":ラジオのボタン -->
+<!-- checked:初期値の項目に指定 -->
+<!-- label属性：クリックが反応する範囲 -->
+<!-- for属性：対象の要素のID -->
+<label for="p1">
+<input id="p1" type="radio" name="payment" value="カード" checked>カード
+</label>
+
+<label>
+<input type="radio" name="payment" value="代金引換" checked>代金引換
+</label>
+
+<label>
+<input type="radio" name="payment" value="銀行振込" checked>銀行振込
+</label>
+
+<label>
+<input type="radio" name="payment" value="コンビニ" checked>コンビニ
+</label>
+
+<p>商品の感想をお寄せください</p>
+<p><textarea name="review" cols="30" rows="5" placeholder="感想を入力してください。">商品名:</textarea></p>
+
+<p>お知らせメールの受信を希望されますか？</p>
+<p><input type="checkbox" name="mail">おすすめ商品のメールを受け取る</p>
+<p><input type="submit" value="確定"></p>
+</form>
+</body>
+</html>
